@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header" id="inicio">
+        <img src="img/menu.svg" alt="" class="hamburger">
+        <nav class="menu-navegacion">
+            <img src="img/cerrar.svg" alt="" class="close">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicio">Mantenimiento</a>
+            <a href="#servicios">Servicios</a>            
+            <a href="#expertos">Facilidades en</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    
+        <div class="contenedor head">
+            <h1 class="titulo">Mejoramos el rendimiento y experiencia en el uso de su computador</h1>
+            <br><br>
+            <p class="copy" style="color: azure;">En DIGI-TECH buscamos la mayor satisfacción posible en el uso de su computador</p>
+            <p class="copy" style="color: azure;">DIGI-TECH (Tecnología Digital)</p>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor" id="servicio">
+            <h2 class="subtitulo">Mantenimientos</h2>
+            
+            <div class="contenedor-servicio">
+                <img src="img/mantenimiento.jpg" alt="">
+                
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>Mantenimiento preventivo</h3>
+                        <p>Conserve la salud de su equipo de cómputo mediante la realización de revisión y limpieza
+                             que garanticen su buen funcionamiento y fiabilidad.</p>
+                    </div>
+
+                
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>Mantenimiento predictivo</h3>
+                        <p>Detecte las posibles fallas o defectos de su equipo de cómputo en las etapas tempranas, para evitar futuros daños o errores.</p>
+                    </div>
+
+                    
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>Mantenimiento correctivo</h3>
+                        <p>Corrija los posibles errores que tenga su equipo y vuelva a conseguir que funcione como el primer día o inclusive mejor.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="gallery" id="servicios">
+            <div class="contenedor">
+                <h1 class="subtitulo">Servicios</h1>
+                <div class="contenedor-galeria">
+                    <img src="img/instalacion.jpg" alt="" class="img-galeria">
+                    <img src="img/remoto.jpg" alt="" class="img-galeria">
+                    <img src="img/mantenimiento2.jpg" alt="" class="img-galeria">
+                    <img src="img/asesorias.jpg" alt="" class="img-galeria">
+                    <img src="img/optimizarso.jpg" alt="" class="img-galeria">
+                    <img src="img/bugs.jpg" alt="" class="img-galeria">
+                </div>
+            </div>
+        </section>
+
+        <section class="imagen-ligth">
+            <img src="img/cerrar.svg" alt="" class="close">
+            <img src="img/portatil1.jpg" alt="" class="agregar-imagen">
+        </section>
+
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitulo">Facilidades</h2>
+            <section class="experts">
+                <div class="cont-expert">
+                    <img src="img/sinpe.jpg" alt="">
+                    <h2 class="n-expert">Pago con SINPE Móvil</h2>
+                </div> 
+                <div class="cont-expert">
+                    <img src="img/team.png" alt="">
+                    <h2 class="n-expert">Soporte Remoto</h2>
+                </div> 
+                <div class="cont-expert">
+                    <img src="img/rapido.png" alt="">
+                    <h2 class="n-expert">Servicio ágil y rápido</h2>
+                </div> 
+            </section>
+        </section>
+
+    </main>
+
+    <footer id="contacto">
+      <div class="contenedor footer-content">
+       
+          <div class="contact-us">
+              <h2 class="brand">DIGI-TECH</h2>
+              <p>Tecnología Digital a su alcance</p>
+          </div>
+          <div class="social-media">                     
+            <a class="social-media-icon" href ="https://www.facebook.com/DigiTechCRTecnologiaDigital" target="DIGI-TECH">
+              <!-- <a href="https://www.facebook.com/DigiTechCRTecnologiaDigital" class="social-media-icon"> -->
+                <i class='bx bxl-facebook-circle'></i>
+              </a>
+              <a class="social-media-icon" href="https://api.whatsapp.com/send?phone=+50663149243" target="DIGI-TECH">
+                <i class='bx bxl-whatsapp'></i>
+              </a>
+          </div>
+
+      </div>
+      <div class="line"></div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 1000, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+        } // End if
+    });
+    });
+    </script>
+    
+</body>
+</html>
