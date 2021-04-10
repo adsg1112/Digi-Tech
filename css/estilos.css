@@ -396,3 +396,42 @@ footer{
     }
 
 }
+
+@media screen and (max-width:300px){
+    .menu-navegacion{
+        width: 55vw;
+    }
+
+    .hamburger{
+        top: 20px;
+        right: 20px;
+    }
+
+    .titulo{
+        font-size: 30px;
+    }
+    .subtitulo{
+        font-size: 30px;
+    }
+
+    .img-galeria{
+        width: 95%;
+    }
+
+    .agregar-imagen{
+        width: 95%;
+    }
+
+    .social-media{
+        width: 100%;
+    }
+    .contact-us{
+        width: 90%;
+    }
+
+    header{
+        height: 90vh;
+        background-image: linear-gradient(135deg, rgba(245, 247, 250, 0.062) 0%, #61718a 100%), url(../img/laptopsexymodificada2.jpg);
+    }
+
+}
