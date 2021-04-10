@@ -397,7 +397,7 @@ footer{
 
 }
 
-@media screen and (max-width:300px){
+@media screen and (max-width:400px){
     .menu-navegacion{
         width: 55vw;
     }
@@ -408,12 +408,12 @@ footer{
     }
 
     .titulo{
-        font-size: 15px;
+        font-size: 10px;
     }
     
     .copy{
-        font-weight: 200;
-        font-size: 12px;
+        font-weight: 150;
+        font-size: 7px;
     }  
     
     .subtitulo{
